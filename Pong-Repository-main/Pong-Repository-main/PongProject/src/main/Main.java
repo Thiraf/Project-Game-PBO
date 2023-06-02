@@ -59,12 +59,12 @@ public class Main extends JFrame {
         // * Game Title
         JLabel gameTitle = new JLabel("PONG", SwingConstants.CENTER);
         gameTitle.setForeground(Color.white);
-        gameTitle.setFont(new Font(pixelType.getName(), Font.BOLD, 200));
+        gameTitle.setFont(new Font("Dialog", Font.BOLD, 200));
         gameMenu.add(gameTitle, BorderLayout.CENTER);
 
         // * Start button
         JButton startButton = new JButton("START GAME");
-        startButton.setFont(new Font(pixelType.getName(), Font.BOLD, 25));
+        startButton.setFont(new Font("Dialog", Font.BOLD, 25));
         startButton.setBackground(grey);
         startButton.setForeground(Color.WHITE);
         startButton.setFocusable(false);
@@ -82,7 +82,7 @@ public class Main extends JFrame {
 
         // * SETTING MENU BUTTON
         JButton settingButton = new JButton("OPTIONS");
-        settingButton.setFont(new Font(pixelType.getName(), Font.BOLD, 25));
+        settingButton.setFont(new Font("Dialog", Font.BOLD, 25));
         settingButton.setBackground(grey);
         settingButton.setForeground(Color.WHITE);
         settingButton.setFocusable(false);
@@ -101,7 +101,7 @@ public class Main extends JFrame {
 
         // * Quit button
         JButton quitButton = new JButton("QUIT");
-        quitButton.setFont(new Font(pixelType.getName(), Font.BOLD, 25));
+        quitButton.setFont(new Font("Dialog", Font.BOLD, 25));
         quitButton.setBackground(grey);
         quitButton.setForeground(Color.WHITE);
         quitButton.setFocusable(false);
@@ -141,7 +141,7 @@ public class Main extends JFrame {
                 Ball.initialSpeed = 100;
 
                 // * size change
-                gameTitle.setFont(new Font(pixelType.getName(), Font.BOLD, 200));
+                gameTitle.setFont(new Font("Dialog", Font.BOLD, 200));
                 btnPanel.setLayout(new GridLayout(4, 1, 10, 30));
                 startButton.setPreferredSize(new Dimension(300, 100));
                 quitButton.setPreferredSize(new Dimension(300, 100));
@@ -162,7 +162,7 @@ public class Main extends JFrame {
                 Paddle.paddleSpeed = 10;
                 Ball.initialSpeed = 50;
                 // * size change
-                gameTitle.setFont(new Font(pixelType.getName(), Font.BOLD, 100));
+                gameTitle.setFont(new Font("Dialog", Font.BOLD, 100));
                 btnPanel.setLayout(new GridLayout(3, 1, 10, 20));
                 startButton.setPreferredSize(new Dimension(250, 50));
                 quitButton.setPreferredSize(new Dimension(250, 50));
@@ -181,14 +181,14 @@ public class Main extends JFrame {
 
         if (isFullScreen) {
             frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
-            gameTitle.setFont(new Font(pixelType.getName(), Font.BOLD, 200));
+            gameTitle.setFont(new Font("Dialog", Font.BOLD, 200));
             btnPanel.setLayout(new GridLayout(4, 1, 10, 30));
             startButton.setPreferredSize(new Dimension(300, 100));
             quitButton.setPreferredSize(new Dimension(300, 100));
             fullButton.setPreferredSize(new Dimension(300, 100));
         } else {
             frame.setSize(screenSize);
-            gameTitle.setFont(new Font(pixelType.getName(), Font.BOLD, 100));
+            gameTitle.setFont(new Font("Dialog", Font.BOLD, 100));
             btnPanel.setLayout(new GridLayout(3, 1, 10, 20));
             startButton.setPreferredSize(new Dimension(200, 55));
             quitButton.setPreferredSize(new Dimension(200, 55));
